@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saheelle's Bakery</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Main header">
+    <div class="nav-inner container">
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <div class="site-title">Saheelle's Bakery</div>
+          <div class="site-sub">Handmade bread • Pastries • Custom cakes</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cart icon -->
+      <div class="nav-actions">
+        <button id="nav-cart-btn" class="cart-icon" aria-label="Cart">
+          🛒 <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Bakery & Café — since 1989</p>
+          <h1>Saheelle's Bakery</h1>
+          <p class="subtitle">Warm, handcrafted breads and pastries made daily with carefully sourced ingredients.</p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#products">Shop Now — Fresh Today</a>
+            <a class="btn secondary" href="#contact">Order Custom Cake</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="hero-photo" style="background-image:url('assets/img/cs.jpg');"></div>
+          <div class="hero-meta">
+            <div class="meta-title">Today's special: Country Sourdough</div>
+            <div class="meta-sub">Tangy crumb • crisp crust • baked this morning</div>
+            <div class="hero-meta-actions">
+              <a class="small-btn" href="#products">See more</a>
+              <a class="small-btn" href="#contact">Reserve a loaf</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-header">
+        <span class="kicker">Our Story</span>
+        <h2 class="section-title">Artisan baking with a local heart</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="muted">Sweet Crumbs Bakery began with a simple idea: delicious food brings people together.</p>
+          <p class="muted">We bake slowly, using long fermentation and traditional techniques.</p>
+
+          <ul class="highlights">
+            <li>Daily fresh breads & pastries</li>
+            <li>Custom celebration cakes</li>
+            <li>Local delivery & catering</li>
+          </ul>
+        </div>
+
+        <aside class="hero-card visit-info">
+          <div class="visit-title">Visit the bakery</div>
+          <div class="muted">JL. Tunggu Raya Timur II • 7:00am — 6:00pm</div>
+          <div><a class="btn primary" href="#contact">Get directions</a></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+      <div class="section-header">
+        <span class="kicker">Fresh Picks</span>
+        <h2 class="section-title">Featured Products</h2>
+      </div>
+
+      <div class="products-grid">
+
+        <article class="product">
+          <div class="product-photo">
+            <img src="assets/img/cs2.jpg" alt="Country sourdough" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Country Sourdough</h3>
+            <div class="price">Rp 30.000</div>
+            <p class="desc">Deep flavor, crunchy crust, hearth-baked.</p>
+            <div class="product-actions">
+              <button class="add-cart-btn small-btn" data-name="Country Sourdough" data-price="30000">Add to Cart</button>
+              <a class="small-btn" href="#gallery">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-photo">
+            <img src="assets/img/bc.jpg" alt="Butter croissant" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Butter Croissant</h3>
+            <div class="price">Rp 45.000</div>
+            <p class="desc">Flaky, buttery, melt-in-your-mouth layers.</p>
+            <div class="product-actions">
+              <button class="add-cart-btn small-btn" data-name="Butter Croissant" data-price="45000">Add to Cart</button>
+              <a class="small-btn" href="#gallery">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-photo">
+            <img src="assets/img/spb.jpg" alt="Pastry box" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Seasonal Pastry Box</h3>
+            <div class="price">Rp 150.000</div>
+            <p class="desc">A curated selection of fresh pastries.</p>
+            <div class="product-actions">
+              <button class="add-cart-btn small-btn" data-name="Seasonal Pastry Box" data-price="150000">Add to Cart</button>
+              <a class="small-btn" href="#gallery">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-photo">
+            <img src="assets/img/ccc.jpg" alt="Custom cake" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Custom Celebration Cake</h3>
+            <div class="price">Rp 500.000</div>
+            <p class="desc">Personalized flavors, fillings, and decorations.</p>
+            <div class="product-actions">
+              <button class="add-cart-btn small-btn" data-name="Custom Celebration Cake" data-price="500000">Add to Cart</button>
+              <a class="small-btn" href="#gallery">View</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Cart Popup -->
+      <div id="cart-popup" class="cart-popup" aria-hidden="true">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <div id="cart-total" class="cart-total">Total: Rp 0</div>
+
+        <button id="cart-order" class="btn primary fullwidth">Pesan via WhatsApp</button>
+        <button id="cart-close" class="btn secondary fullwidth">Close</button>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="section-header">
+        <span class="kicker">Visual Menu</span>
+        <h2 class="section-title">Gallery</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" style="background-image:url('assets/img/gallery/g1.jpeg');"></div>
+        <div class="gallery-item" style="background-image:url('assets/img/gallery/g2.jpg');"></div>
+        <div class="gallery-item" style="background-image:url('assets/img/gallery/g3.jpeg');"></div>
+        <div class="gallery-item" style="background-image:url('assets/img/gallery/g4.jpg');"></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS (Updated) -->
+    <section id="testimonials">
+      <div class="section-header">
+        <span class="kicker">Loved Locally</span>
+        <h2 class="section-title">What Customers Say</h2>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="test-meta">
+            <div class="avatar">AL</div>
+            <div>
+              <div class="test-author">Emier M.</div>
+              <div class="test-role">Event Planner</div>
+            </div>
+          </div>
+          <p class="test-quote">
+            “We ordered box lunches and a dessert spread — impeccable quality and on time.”
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="test-meta">
+            <div class="avatar">JB</div>
+            <div>
+              <div class="test-author">Hussein T.</div>
+              <div class="test-role">Regular Customer</div>
+            </div>
+          </div>
+          <p class="test-quote">
+            “The sourdough has the best tang in town. Beautiful cakes!”
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="test-meta">
+            <div class="avatar">EM</div>
+            <div>
+              <div class="test-author">Khaleed B.</div>
+              <div class="test-role">Bride</div>
+            </div>
+          </div>
+          <p class="test-quote">
+            “They made our wedding cake — elegant, delicious, and unforgettable.”
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-header">
+        <span class="kicker">Get In Touch</span>
+        <h2 class="section-title">Contact & Orders</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Make an order or ask a question</h3>
+          <p class="muted">We respond within one business day.</p>
+
+          <ul class="contact-list">
+            <li>Phone: <a href="tel:+6285640444923">+62 856-4044-4923</a></li>
+            <li>Email: <a href="mailto:SaheelleBakery@gmail.com">SaheelleBakery@gmail.com</a></li>
+            <li>Address: JL. Tunggu Raya Timur II</li>
+          </ul>
+
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:SaheelleBakery@gmail.com">Email us</a>
+            <a class="btn secondary" href="tel:+6285640444923">Call now</a>
+          </div>
+        </div>
+
+        <aside class="contact-card">
+          <div class="visit-title">Hours</div>
+          <div class="muted">Mon–Sun: 7:00 AM — 6:00 PM</div>
+
+          <div class="follow">
+            <div class="visit-title">Follow us</div>
+            <div class="social-row">
+              <a class="social-btn" href="https://www.instagram.com/">IG</a>
+              <a class="social-btn" href="https://www.youtube.com/">YT</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="map-card">
+        <iframe
+          width="100%"
+          height="320"
+          style="border:0; border-radius: 12px;"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1013672.5416975926!2d109.3915426!3d-7.049371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708e8031d5329b%3A0xb3bc781dadc16b62!2sJl.%20Tunggu%20Raya%20Timur%20II!5e0!3m2!1sid!2sid!4v1763538638699!5m2!1sid!2sid">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-title">Sweet Crumbs Bakery</div>
+        <div class="muted">Handmade breads & pastries • 123 Crumbs Lane</div>
+      </div>
+
+      <div class="footer-right">
+        <div class="muted">© <span id="year"></span> Sweet Crumbs Bakery</div>
+        <div class="socials">
+          <a class="social-btn" href="#">IG</a>
+          <a class="social-btn" href="#">YT</a>
+          <a class="social-btn" href="mailto:SaheelleBakery@gmail.com">✉</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button (Fixed) -->
+  <a href="https://wa.me/6285640444923" class="wa-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="assets/img/whatsapp.svg" alt="WhatsApp" class="wa-icon">
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
